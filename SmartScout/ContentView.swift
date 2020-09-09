@@ -7,15 +7,26 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ContentView: View {
+    
+    @State var isVisible: Bool
+    @EnvironmentObject var data: VideoStore
+    
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        ZStack{
+        if isVisible {
+            SplashScreen()
+                            
+        } else{
+            TabBarView(data: data)
+        }
+        }
+        .onAppear{
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.isVisible.toggle()
+        }
+        }
     }
 }

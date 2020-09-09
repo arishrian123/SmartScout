@@ -1,0 +1,6 @@
+framework module Pods_SmartScoutTests {
+  umbrella header "Pods-SmartScoutTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
