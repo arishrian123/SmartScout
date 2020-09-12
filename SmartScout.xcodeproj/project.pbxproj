@@ -33,6 +33,12 @@
 		19D1A4FA24FBCBAE00641949 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4F924FBCBAE00641949 /* Coordinator.swift */; };
 		19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */; };
 		19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D2D1DA2500226E009FA73E /* ProfileView.swift */; };
+		37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5130250C786F005B3041 /* Poppins-Light.otf */; };
+		37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */; };
+		37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5134250C78BA005B3041 /* Poppins-Medium.otf */; };
+		37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD5139250C795C005B3041 /* BackgroundAnimation.swift */; };
+		37CD513C250C79BB005B3041 /* FootballAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD513B250C79BB005B3041 /* FootballAnimation.swift */; };
+		37CD513E250C7A9C005B3041 /* GradientAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD513D250C7A9C005B3041 /* GradientAnimation.swift */; };
 		7FBA706CBBBC0D7EA64C24E7 /* Pods_SmartScout_SmartScoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEC06F51D33E023A57435A /* Pods_SmartScout_SmartScoutUITests.framework */; };
 		BBE2246B4F2D7F8C02FC16B8 /* Pods_SmartScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBD2C653F499B03436D1C2B /* Pods_SmartScout.framework */; };
 		FEA69EC279A8D98BBB250A92 /* Pods_SmartScoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC857845375A00C5C95726 /* Pods_SmartScoutTests.framework */; };
@@ -102,6 +108,12 @@
 		19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 		19D2D1DA2500226E009FA73E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2844902EF9E31347B23A7CA3 /* Pods-SmartScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScout.debug.xcconfig"; path = "Target Support Files/Pods-SmartScout/Pods-SmartScout.debug.xcconfig"; sourceTree = "<group>"; };
+		37CD5130250C786F005B3041 /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
+		37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
+		37CD5134250C78BA005B3041 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		37CD5139250C795C005B3041 /* BackgroundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAnimation.swift; sourceTree = "<group>"; };
+		37CD513B250C79BB005B3041 /* FootballAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballAnimation.swift; sourceTree = "<group>"; };
+		37CD513D250C7A9C005B3041 /* GradientAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAnimation.swift; sourceTree = SOURCE_ROOT; };
 		5637A89A6AEE84FCF94650E9 /* Pods-SmartScoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScoutTests.release.xcconfig"; path = "Target Support Files/Pods-SmartScoutTests/Pods-SmartScoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CBD2C653F499B03436D1C2B /* Pods_SmartScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEC06F51D33E023A57435A /* Pods_SmartScout_SmartScoutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartScout_SmartScoutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,13 +204,14 @@
 				191A8692250304E900389B82 /* TabBarView.swift */,
 				191A8694250305F400389B82 /* SearchView.swift */,
 				19BC0E0324F55E9F001B9C1D /* ContentView.swift */,
-				191A869C2503B66A00389B82 /* SplashScreen.swift */,
+				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
+				19BC0E0724F55EA1001B9C1D /* Preview Content */,
+				37CD512F250C7845005B3041 /* Fonts */,
 				19BC0E0524F55EA1001B9C1D /* Assets.xcassets */,
 				19BC0E0A24F55EA1001B9C1D /* LaunchScreen.storyboard */,
 				19BC0E0D24F55EA1001B9C1D /* Info.plist */,
-				19BC0E0724F55EA1001B9C1D /* Preview Content */,
 			);
 			path = SmartScout;
 			sourceTree = "<group>";
@@ -250,6 +263,27 @@
 				191A868E2502E62700389B82 /* VideoStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		37697EDA250A5C8200429E20 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				191A869C2503B66A00389B82 /* SplashScreen.swift */,
+				37CD513D250C7A9C005B3041 /* GradientAnimation.swift */,
+				37CD513B250C79BB005B3041 /* FootballAnimation.swift */,
+				37CD5139250C795C005B3041 /* BackgroundAnimation.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		37CD512F250C7845005B3041 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				37CD5130250C786F005B3041 /* Poppins-Light.otf */,
+				37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */,
+				37CD5134250C78BA005B3041 /* Poppins-Medium.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AC507DD82D806EAF9C92932F /* Frameworks */ = {
@@ -385,12 +419,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */,
 				19BC0E0C24F55EA1001B9C1D /* LaunchScreen.storyboard in Resources */,
 				191A86912502E89300389B82 /* Extension in Resources */,
 				191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */,
 				19BC0E0924F55EA1001B9C1D /* Preview Assets.xcassets in Resources */,
 				19BC0E0624F55EA1001B9C1D /* Assets.xcassets in Resources */,
+				37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */,
 				197EF5E22508DF5800B57F91 /* video4.mov in Resources */,
+				37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +557,11 @@
 			files = (
 				19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */,
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
+				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
+				37CD513C250C79BB005B3041 /* FootballAnimation.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
+				37CD513E250C7A9C005B3041 /* GradientAnimation.swift in Sources */,
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,
 				191A86972503061200389B82 /* AddNewVideoView.swift in Sources */,
 				19D1A4F824FBCB5A00641949 /* Player.swift in Sources */,
