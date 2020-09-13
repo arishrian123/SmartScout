@@ -18,6 +18,9 @@ struct SplashScreen: View {
     @State var isLogo = false
     @State var isRepeat: Bool = true
     
+    let width = UIScreen.main.bounds.width
+    let height = UIScreen.main.bounds.height
+    
     var body: some View {
         
         ZStack {
@@ -34,14 +37,14 @@ struct SplashScreen: View {
                 .foregroundColor(Color.white)
                 .font(Font.custom("Poppins-Medium", size: 55))
                 .offset(x: 52)
-                .offset(x: isVisible ? 27 : 250)
+                .offset(x: isVisible ? 27: 250)
                 .animation(.spring())
                 .zIndex(1)
             
             Image("curzen_logo_white")
                 .resizable()
                 .frame(width: 110, height: 45)
-                .offset(y: 400)
+                .offset(y: 300)
                 .offset(y: isLogo ? 0: 80)
                 .opacity(0.3)
                 .animation(.spring())

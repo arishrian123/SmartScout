@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SDWebImage
 
 struct FootballAnimation: View {
     
