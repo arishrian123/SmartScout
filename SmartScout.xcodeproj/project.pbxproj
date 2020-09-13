@@ -17,6 +17,7 @@
 		191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191A869A2503180E00389B82 /* GoogleService-Info.plist */; };
 		191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A869C2503B66A00389B82 /* SplashScreen.swift */; };
 		197EF5E22508DF5800B57F91 /* video4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 197EF5E12508DF5800B57F91 /* video4.mov */; };
+		197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF5E5250E5B8000B57F91 /* LoginView.swift */; };
 		19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0DFF24F55E9F001B9C1D /* AppDelegate.swift */; };
 		19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E0124F55E9F001B9C1D /* SceneDelegate.swift */; };
 		19BC0E0424F55E9F001B9C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E0324F55E9F001B9C1D /* ContentView.swift */; };
@@ -85,6 +86,7 @@
 		191A869A2503180E00389B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		191A869C2503B66A00389B82 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		197EF5E12508DF5800B57F91 /* video4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.mov; sourceTree = "<group>"; };
+		197EF5E5250E5B8000B57F91 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		19BC0DFC24F55E9F001B9C1D /* SmartScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BC0DFF24F55E9F001B9C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19BC0E0124F55E9F001B9C1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				191A8692250304E900389B82 /* TabBarView.swift */,
 				191A8694250305F400389B82 /* SearchView.swift */,
 				19BC0E0324F55E9F001B9C1D /* ContentView.swift */,
+				197EF5E5250E5B8000B57F91 /* LoginView.swift */,
 				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
@@ -567,6 +570,7 @@
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,
+				197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */,
 				191A86972503061200389B82 /* AddNewVideoView.swift in Sources */,
 				19D1A4F824FBCB5A00641949 /* Player.swift in Sources */,
 				19D1A4F024FBC90500641949 /* Home.swift in Sources */,
