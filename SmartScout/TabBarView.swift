@@ -38,6 +38,12 @@ struct TabBarView: View {
                 Image(systemName: "person.crop.circle")
                 Text("Profile")
             }.tag(3)
+            
+            SettingsView()
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Settings")
+            }.tag(4)
         }
     }
 }

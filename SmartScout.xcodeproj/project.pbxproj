@@ -166,8 +166,6 @@
 		191A868D2502E4BB00389B82 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
-				37BFD2B8250EF372004F427F /* SettingsViews */,
-				37BFD2B7250EF362004F427F /* Settings */,
 				191A868B2502E4AF00389B82 /* VideoCell.swift */,
 				19D2D1DA2500226E009FA73E /* ProfileView.swift */,
 				191A86862502E2F800389B82 /* ProfileHeader.swift */,
@@ -222,6 +220,7 @@
 				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
+				37BFD2B7250EF362004F427F /* Settings */,
 				19BC0E0724F55EA1001B9C1D /* Preview Content */,
 				37BFD2B9250EF37B004F427F /* Settings */,
 				37CD512F250C7845005B3041 /* Fonts */,
@@ -294,15 +293,7 @@
 			children = (
 			);
 			name = Settings;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		37BFD2B8250EF372004F427F /* SettingsViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SettingsViews;
-			path = ../..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		37BFD2B9250EF37B004F427F /* Settings */ = {

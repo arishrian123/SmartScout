@@ -24,6 +24,7 @@ struct ProfileHeader: View {
                         .clipped()
                         .overlay(Circle().stroke(Color.white, lineWidth: 4))
                         .padding(.top, 60)
+                        .zIndex(1)
                     
                     Text("Oliver Cordingley").font(Font.custom("Poppins-Medium", size: 25))
                         .foregroundColor(.white)
