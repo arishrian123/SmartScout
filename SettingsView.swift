@@ -13,6 +13,10 @@ struct SettingsView: View {
         from: "Settings.json")
   
     var body: some View {
+        
+        VStack {
+            
+        
         NavigationView {
             List {
                 ForEach(settings) { section in
@@ -29,7 +33,7 @@ struct SettingsView: View {
     }
 }
 }
-
+}
     struct Settingsview_Previews: PreviewProvider {
         static var previews: some View {
             SettingsView()

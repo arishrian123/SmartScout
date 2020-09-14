@@ -19,4 +19,3 @@ struct MenuItem: Codable, Equatable, Identifiable {
     var name: String
     
 }
-

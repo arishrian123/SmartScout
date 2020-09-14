@@ -41,7 +41,7 @@ struct TabBarView: View {
             
             SettingsView()
                 .tabItem{
-                    Image(systemName: "house")
+                    Image(systemName: "gear")
                     Text("Settings")
             }.tag(4)
         }
