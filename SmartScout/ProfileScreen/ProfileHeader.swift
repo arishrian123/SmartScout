@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct ProfileHeader: View {
-    let gradient = Gradient(colors: [.red, .orange])
     
     var body: some View {
         VStack {
@@ -20,27 +19,30 @@ struct ProfileHeader: View {
                     Image("ollie")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 200, height: 200)
+                        .frame(width: 120, height: 120)
                         .clipShape(Circle())
                         .clipped()
                         .overlay(Circle().stroke(Color.white, lineWidth: 4))
                         .padding(.top, 60)
+                        .zIndex(1)
                     
-                    Text("Oliver Cordingley").font(.system(size: 20)).bold().foregroundColor(.white)
+                    Text("Oliver Cordingley").font(Font.custom("Poppins-Medium", size: 25))
+                        .foregroundColor(.white)
                         .padding(.top, 12)
                     
-                    Text("@ollie").font(.system(size: 18)).foregroundColor(.white)
-                    .padding(.top, 4)
+                    Text("@ollie")
+                        .font(Font.custom("Poppins-Light", size: 15))
+                        .foregroundColor(.white)
+                        .opacity(0.7)
+                        .padding(.top, 4)
                 }
                 Spacer()
             }
             Spacer()
         }
-        .background(LinearGradient(gradient: gradient, startPoint: .top, endPoint: .bottom))
-        .edgesIgnoringSafeArea(.all)
-    }
+        
 }
-
+}
 struct ProfileHeader_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHeader()

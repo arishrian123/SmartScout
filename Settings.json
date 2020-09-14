@@ -1,0 +1,101 @@
+[
+    {
+        "id": "EF1CC5BB-4785-4D8E-AB98-5FA4E00B6A66",
+        "name": "Account",
+        "item": [
+            {
+                "id": "EDCD038C-036F-4C40-826F-61C88CD84DDD",
+                "name": "Account Details",
+                
+            },
+            {
+                "id": "36A7CC40-18C1-48E5-BCD8-3B42D43BEAEE",
+                "name": "Change Password",
+                
+            },
+            {
+                "id": "CFB8C2DB-3478-4A10-92FA-3D2A2D5324FB",
+                "name": "Notifications",
+                
+            },
+            
+        ]
+    },
+    {
+        "name": "Support",
+        "id": "3D97FAB4-50AC-40FC-9BF0-3F46BB6A92F5",
+        "item": [
+            {
+                "id": "D44AAEBC-BF4F-42CD-8C37-0FEF772A5B69",
+                "name": "Community Guidelines",
+                
+            },
+            {
+                "id": "2BAD20C5-D007-4BBE-B074-8CF0F256A42F",
+                "name": "Safety Tips",
+                
+            },
+            {
+                "id": "759527CB-1064-4082-A527-F04698F9D18F",
+                "name": "Safety Centre",
+                
+            },
+            {
+                "id": "AD419CE6-50CC-4132-BE8E-B92B9DFE4D02",
+                "name": "Contact Us",
+                
+            },
+            {
+                "id": "944AB773-16CA-48F9-BB64-BB0E482FE102",
+                "name": "Report a Problem",
+                
+            },
+            
+        ]
+    },
+    {
+        "name": "Legal",
+        "id": "1C89DAFD-7653-4EF2-BF20-C51A159BAC43",
+        "item": [
+            {
+                "id": "AB7E38EA-05A7-426A-AFF3-B3A32B3E86BF",
+                "name": "Terms of Use",
+                
+            },
+            {
+                "id": "758ABBE3-F338-4F7C-BAC7-8D61BC1FB329",
+                "name": "Privacy Policy",
+                
+            },
+            {
+                "id": "A73E2D2D-D53A-46D4-8829-62011EEF7DA4",
+                "name": "Copyright Policy",
+                
+            },
+            {
+                "id": "971CFDDD-2AFA-418F-909F-D459CC6827CF",
+                "name": "Licences"
+                
+            }
+            
+        ]
+    },
+    {
+        "name": "Other",
+        "id": "1C89DAFD-7653-4EF2-BF20-C51A159BAC4A",
+        "item": [
+            {
+                "id": "AB7E38EA-05A7-426A-AFF3-B3A32B3E86BF",
+                "name": "Log Out",
+                
+            },
+            {
+                "id": "AB7E38EA-05A7-426A-AFF3-B3A32B3E86B1",
+                "name": "Delete Account",
+                
+            }
+            
+            
+        ]
+    }
+]
