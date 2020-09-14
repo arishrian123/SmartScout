@@ -10,25 +10,32 @@ import SwiftUI
 import AVKit
 import FirebaseFirestore
 import UserNotifications
-
+import FirebaseAuth
 
 struct PlayerView : View {
     
     @ObservedObject var data = VideoStore()
+    @ObservedObject var firestoreData = FirestoreData()
     
     @State var liked: Bool = false
     
     let db = Firestore.firestore()
-    
+    let user = Auth.auth().currentUser
+        
     func likedToDB(){
+        
+        if (user != nil) {
         if liked{
-            db.collection("user1").document("liked").setData(["liked": true])
+            db.collection("users").document("MvqHJkYNMXT4wcAsdnEEHVTx6tC3").updateData(["liked": true])
         }
         else{
-            db.collection("user1").document("liked").setData(["liked": false])
+            db.collection("users").document("MvqHJkYNMXT4wcAsdnEEHVTx6tC3").updateData(["liked": false])
+        }
         }
 
     }
+    
+    
     
     var body: some View{
         
@@ -61,26 +68,11 @@ struct PlayerView : View {
                             .foregroundColor(.white)
                         }
                         
+                        if(self.firestoreData.userType == "Scout"){
                         Button(action: {
                             self.liked.toggle()
                             self.likedToDB()
                             self.data.videos[i].liked.toggle()
-                            
-                            let content = UNMutableNotificationContent()
-                            content.title = "A scout has liked your video"
-                            content.subtitle = "Check who!"
-                            content.sound = UNNotificationSound.default
-                            
-                            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-                            
-                            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-                            
-                            UNUserNotificationCenter.current().add(request) { (Error) in
-                                if let error = Error{
-                                    print("\(error.localizedDescription)")
-                                }
-                            }
-                            
                             
                         }) {
                             
@@ -93,17 +85,15 @@ struct PlayerView : View {
                                 
                             }
                         }.offset(x: 150, y: 0)
+                        }
+                        
                     }
-                    
-                    
-                    
-                    
-                    
                 }
             }
         }
         .onAppear {
-            
+
+ 
             if !self.data.isEmpty {
                     
                 

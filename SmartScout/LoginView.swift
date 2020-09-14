@@ -18,6 +18,7 @@ struct LoginView: View {
     @State var userType = 0
     var userTypes = ["Parent", "Scout"]
     let db = Firestore.firestore()
+    var data: VideoStore
     
     func login() {
         
@@ -26,8 +27,12 @@ struct LoginView: View {
             if let error = error {
                 self.isSuccess = false
                 print(error.localizedDescription)
-            } else {
+            } else if let result = result {
                 
+                /*self.db.collection("users")
+                    .document(result.user.uid)
+                    .setData(["email": self.email,
+                              "type": self.userTypes[self.userType]])*/
                 
                 self.isSuccess = true
             }
@@ -35,6 +40,9 @@ struct LoginView: View {
     }
     
     var body: some View {
+        
+        ZStack{
+        if !isSuccess {
         ZStack{
             Color.init("color1").edgesIgnoringSafeArea(.all)
             
@@ -46,17 +54,17 @@ struct LoginView: View {
                     
                     VStack{
                         
-                    TextField("Email", text: $email)
-                        .background(Color.white)
+                        TextField("Email", text: $email)
+                        
                         
                     SecureField("Password", text: $password)
-                        .background(Color.white)
                         
-                        Picker(selection: $userType, label: Text("Select")){
+                        
+                        /*Picker(selection: $userType, label: Text("Select")){
                             ForEach(0 ..< userTypes.count){
                                 Text(self.userTypes[$0])
                             }
-                        }
+                        }*/
                     }
                     
                     Button(action: {
@@ -76,11 +84,15 @@ struct LoginView: View {
             
             
         }
+        } else {
+            TabBarView(data: data)
+        }
+        }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(data: VideoStore())
     }
 }

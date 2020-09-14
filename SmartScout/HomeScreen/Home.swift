@@ -8,6 +8,7 @@
 
 import SwiftUI
 import AVKit
+import UserNotifications
 
 struct Home : View {
     
@@ -17,11 +18,55 @@ struct Home : View {
     
     @ObservedObject var data = VideoStore()
     
+    @ObservedObject var firestoreData = FirestoreData()
+    
+    func showNotification() {
+        
+        let content = UNMutableNotificationContent()
+        content.title = "A scout has liked your video"
+        content.subtitle = "Check who!"
+        content.sound = UNNotificationSound.default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (Error) in
+            if let error = Error{
+                print("\(error.localizedDescription)")
+            }
+        }
+        
+    }
+    
     var body: some View{
         
         ZStack{
                         
             PlayerScrollView(data: self.data)
+                .onAppear{
+                    DispatchQueue.main.async {
+                        
+                        var repeats: Bool = self.firestoreData.liked
+                        
+                         var done: Bool = true
+                        
+                        Timer.scheduledTimer(withTimeInterval: 1, repeats: done) { timer in
+
+                            while done{
+                            if(self.firestoreData.liked && self.firestoreData.userType == "Parent"){
+                                self.showNotification()
+                                done = false
+                            } else {
+                                done = true
+                            }
+                            }
+                        }
+                        
+                        
+                    }
+                    
+            }
                     
             VStack{
                 

@@ -34,6 +34,7 @@
 		19D1A4FA24FBCBAE00641949 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4F924FBCBAE00641949 /* Coordinator.swift */; };
 		19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */; };
 		19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D2D1DA2500226E009FA73E /* ProfileView.swift */; };
+		19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9CF4250F48D800D871CB /* FirestoreData.swift */; };
 		37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5130250C786F005B3041 /* Poppins-Light.otf */; };
 		37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */; };
 		37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5134250C78BA005B3041 /* Poppins-Medium.otf */; };
@@ -109,6 +110,7 @@
 		19D1A4F924FBCBAE00641949 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScrollView.swift; sourceTree = "<group>"; };
 		19D2D1DA2500226E009FA73E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		19DF9CF4250F48D800D871CB /* FirestoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreData.swift; sourceTree = "<group>"; };
 		2844902EF9E31347B23A7CA3 /* Pods-SmartScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScout.debug.xcconfig"; path = "Target Support Files/Pods-SmartScout/Pods-SmartScout.debug.xcconfig"; sourceTree = "<group>"; };
 		37CD5130250C786F005B3041 /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
 		37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				19BC0DFF24F55E9F001B9C1D /* AppDelegate.swift */,
 				19BC0E0124F55E9F001B9C1D /* SceneDelegate.swift */,
 				191A86962503061200389B82 /* AddNewVideoView.swift */,
+				19DF9CF4250F48D800D871CB /* FirestoreData.swift */,
 				191A8692250304E900389B82 /* TabBarView.swift */,
 				191A8694250305F400389B82 /* SearchView.swift */,
 				19BC0E0324F55E9F001B9C1D /* ContentView.swift */,
@@ -561,6 +564,7 @@
 				19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */,
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
 				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
+				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
 				37CD513C250C79BB005B3041 /* FootballAnimation.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
@@ -749,6 +753,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SmartScout/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Z7289NTR6;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SmartScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -770,6 +775,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SmartScout/Preview Content\"";
 				DEVELOPMENT_TEAM = 2Z7289NTR6;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = SmartScout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
