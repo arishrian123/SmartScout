@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/olivercordingley/Documents/GitHub/SmartScout/SettingsView.swift">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Settings">
+   </Group>
+   <FileRef
       location = "group:SmartScout.xcodeproj">
    </FileRef>
    <FileRef
