@@ -11,6 +11,7 @@ pod 'ASCollectionView-SwiftUI'
 pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
+pod 'SDWebImageSwiftUI'
 
   target 'SmartScoutTests' do
     inherit! :search_paths

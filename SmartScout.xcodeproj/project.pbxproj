@@ -33,6 +33,8 @@
 		19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */; };
 		19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D2D1DA2500226E009FA73E /* ProfileView.swift */; };
 		19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9CF4250F48D800D871CB /* FirestoreData.swift */; };
+		374B876625110680005FD24A /* PlayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B876525110680005FD24A /* PlayerAnimation.swift */; };
+		374B8768251108B0005FD24A /* Unknown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 374B8767251108B0005FD24A /* Unknown.gif */; };
 		3755FDF0250F7A8400C22AC6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */; };
 		3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755FDF5250F889400C22AC6 /* Assets.xcassets */; };
 		37B8161E250E340C00E17DF9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 37B8161D250E340C00E17DF9 /* SDWebImage */; };
@@ -116,6 +118,8 @@
 		19D2D1DA2500226E009FA73E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		19DF9CF4250F48D800D871CB /* FirestoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreData.swift; sourceTree = "<group>"; };
 		2844902EF9E31347B23A7CA3 /* Pods-SmartScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScout.debug.xcconfig"; path = "Target Support Files/Pods-SmartScout/Pods-SmartScout.debug.xcconfig"; sourceTree = "<group>"; };
+		374B876525110680005FD24A /* PlayerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAnimation.swift; sourceTree = "<group>"; };
+		374B8767251108B0005FD24A /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
 		3755FDF5250F889400C22AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37BFD2B4250ED43A004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Unknown.gif; path = "../../../../Work/Curzen IT/Projects/SmartScout/SSAnimation/Unknown.gif"; sourceTree = "<group>"; };
 		37BFD2B6250ED4A9004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 				19BC0E0A24F55EA1001B9C1D /* LaunchScreen.storyboard */,
 				19BC0E0D24F55EA1001B9C1D /* Info.plist */,
 				3755FDF5250F889400C22AC6 /* Assets.xcassets */,
+				374B8767251108B0005FD24A /* Unknown.gif */,
 			);
 			path = SmartScout;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			children = (
 				191A869C2503B66A00389B82 /* SplashScreen.swift */,
 				37CD5139250C795C005B3041 /* BackgroundAnimation.swift */,
+				374B876525110680005FD24A /* PlayerAnimation.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				191A86912502E89300389B82 /* Extension in Resources */,
 				3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */,
 				191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */,
+				374B8768251108B0005FD24A /* Unknown.gif in Resources */,
 				37BFD2B5250ED43A004F427F /* Unknown.gif in Resources */,
 				37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */,
 				197EF5E22508DF5800B57F91 /* video4.mov in Resources */,
@@ -602,7 +609,6 @@
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
 				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
 				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
-				37CD513C250C79BB005B3041 /* FootballAnimation.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,
@@ -621,6 +627,7 @@
 				37BFD2BB250EF3AE004F427F /* Store.swift in Sources */,
 				19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */,
 				191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */,
+				374B876625110680005FD24A /* PlayerAnimation.swift in Sources */,
 				191A8693250304E900389B82 /* TabBarView.swift in Sources */,
 				19D1A4FA24FBCBAE00641949 /* Coordinator.swift in Sources */,
 				37BFD2C7250EF46F004F427F /* SettingsView.swift in Sources */,
