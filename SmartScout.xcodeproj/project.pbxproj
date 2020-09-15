@@ -18,6 +18,7 @@
 		191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A869C2503B66A00389B82 /* SplashScreen.swift */; };
 		197EF5E22508DF5800B57F91 /* video4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 197EF5E12508DF5800B57F91 /* video4.mov */; };
 		197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF5E5250E5B8000B57F91 /* LoginView.swift */; };
+		19A892A625110BF900F0BC84 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 19A892A525110BF900F0BC84 /* Preview Content */; };
 		19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0DFF24F55E9F001B9C1D /* AppDelegate.swift */; };
 		19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E0124F55E9F001B9C1D /* SceneDelegate.swift */; };
 		19BC0E0424F55E9F001B9C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E0324F55E9F001B9C1D /* ContentView.swift */; };
@@ -38,7 +39,6 @@
 		3755FDF0250F7A8400C22AC6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */; };
 		3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755FDF5250F889400C22AC6 /* Assets.xcassets */; };
 		37B8161E250E340C00E17DF9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 37B8161D250E340C00E17DF9 /* SDWebImage */; };
-		37BFD2B5250ED43A004F427F /* Unknown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37BFD2B4250ED43A004F427F /* Unknown.gif */; };
 		37BFD2BB250EF3AE004F427F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2BA250EF3AE004F427F /* Store.swift */; };
 		37BFD2BD250EF3FA004F427F /* SettingsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2BC250EF3FA004F427F /* SettingsRules.swift */; };
 		37BFD2C1250EF420004F427F /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 37BFD2C0250EF420004F427F /* Settings.json */; };
@@ -96,6 +96,7 @@
 		191A869C2503B66A00389B82 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		197EF5E12508DF5800B57F91 /* video4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.mov; sourceTree = "<group>"; };
 		197EF5E5250E5B8000B57F91 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19A892A525110BF900F0BC84 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		19BC0DFC24F55E9F001B9C1D /* SmartScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BC0DFF24F55E9F001B9C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19BC0E0124F55E9F001B9C1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +122,6 @@
 		374B876525110680005FD24A /* PlayerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAnimation.swift; sourceTree = "<group>"; };
 		374B8767251108B0005FD24A /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
 		3755FDF5250F889400C22AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37BFD2B4250ED43A004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Unknown.gif; path = "../../../../Work/Curzen IT/Projects/SmartScout/SSAnimation/Unknown.gif"; sourceTree = "<group>"; };
 		37BFD2B6250ED4A9004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
 		37BFD2BA250EF3AE004F427F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		37BFD2BC250EF3FA004F427F /* SettingsRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRules.swift; sourceTree = "<group>"; };
@@ -217,6 +217,7 @@
 		19BC0DFE24F55E9F001B9C1D /* SmartScout */ = {
 			isa = PBXGroup;
 			children = (
+				19A892A525110BF900F0BC84 /* Preview Content */,
 				197EF5E02508DF3F00B57F91 /* Videos */,
 				191A869A2503180E00389B82 /* GoogleService-Info.plist */,
 				191A86902502E89300389B82 /* Extension */,
@@ -232,7 +233,6 @@
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
 				37BFD2B9250EF37B004F427F /* Settings */,
-				19BC0E0724F55EA1001B9C1D /* Preview Content */,
 				37CD512F250C7845005B3041 /* Fonts */,
 				19BC0E0A24F55EA1001B9C1D /* LaunchScreen.storyboard */,
 				19BC0E0D24F55EA1001B9C1D /* Info.plist */,
@@ -240,14 +240,6 @@
 				374B8767251108B0005FD24A /* Unknown.gif */,
 			);
 			path = SmartScout;
-			sourceTree = "<group>";
-		};
-		19BC0E0724F55EA1001B9C1D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				37BFD2B4250ED43A004F427F /* Unknown.gif */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		19BC0E1524F55EA1001B9C1D /* SmartScoutTests */ = {
@@ -471,9 +463,9 @@
 				37BFD2C1250EF420004F427F /* Settings.json in Resources */,
 				191A86912502E89300389B82 /* Extension in Resources */,
 				3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */,
+				19A892A625110BF900F0BC84 /* Preview Content in Resources */,
 				191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */,
 				374B8768251108B0005FD24A /* Unknown.gif in Resources */,
-				37BFD2B5250ED43A004F427F /* Unknown.gif in Resources */,
 				37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */,
 				197EF5E22508DF5800B57F91 /* video4.mov in Resources */,
 				37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */,
