@@ -36,15 +36,16 @@
 		19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9CF4250F48D800D871CB /* FirestoreData.swift */; };
 		374B876625110680005FD24A /* PlayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B876525110680005FD24A /* PlayerAnimation.swift */; };
 		374B8768251108B0005FD24A /* Unknown.gif in Resources */ = {isa = PBXBuildFile; fileRef = 374B8767251108B0005FD24A /* Unknown.gif */; };
-		374B876C25110B59005FD24A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B876B25110B59005FD24A /* SettingsView.swift */; };
+		3752B35125118C7A003A2071 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B34B25118C79003A2071 /* SettingsOption.swift */; };
+		3752B35225118C7A003A2071 /* SettingsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B34C25118C79003A2071 /* SettingsRules.swift */; };
+		3752B35325118C7A003A2071 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B34D25118C79003A2071 /* SettingsView.swift */; };
+		3752B35425118C7A003A2071 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 3752B34E25118C79003A2071 /* Settings.json */; };
+		3752B35525118C7A003A2071 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B34F25118C79003A2071 /* ItemRow.swift */; };
+		3752B35625118C7A003A2071 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B35025118C79003A2071 /* Store.swift */; };
+		3752B35825118DA1003A2071 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B35725118DA1003A2071 /* BlurView.swift */; };
 		3755FDF0250F7A8400C22AC6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */; };
 		3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755FDF5250F889400C22AC6 /* Assets.xcassets */; };
 		37B8161E250E340C00E17DF9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 37B8161D250E340C00E17DF9 /* SDWebImage */; };
-		37BFD2BB250EF3AE004F427F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2BA250EF3AE004F427F /* Store.swift */; };
-		37BFD2BD250EF3FA004F427F /* SettingsRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2BC250EF3FA004F427F /* SettingsRules.swift */; };
-		37BFD2C1250EF420004F427F /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = 37BFD2C0250EF420004F427F /* Settings.json */; };
-		37BFD2C3250EF426004F427F /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2C2250EF426004F427F /* SettingsOption.swift */; };
-		37BFD2C5250EF434004F427F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BFD2C4250EF434004F427F /* ItemRow.swift */; };
 		37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5130250C786F005B3041 /* Poppins-Light.otf */; };
 		37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */; };
 		37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5134250C78BA005B3041 /* Poppins-Medium.otf */; };
@@ -121,14 +122,15 @@
 		2844902EF9E31347B23A7CA3 /* Pods-SmartScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScout.debug.xcconfig"; path = "Target Support Files/Pods-SmartScout/Pods-SmartScout.debug.xcconfig"; sourceTree = "<group>"; };
 		374B876525110680005FD24A /* PlayerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAnimation.swift; sourceTree = "<group>"; };
 		374B8767251108B0005FD24A /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
-		374B876B25110B59005FD24A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = /Users/olivercordingley/Documents/GitHub/SmartScout/SettingsView.swift; sourceTree = "<absolute>"; };
+		3752B34B25118C79003A2071 /* SettingsOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		3752B34C25118C79003A2071 /* SettingsRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRules.swift; sourceTree = "<group>"; };
+		3752B34D25118C79003A2071 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3752B34E25118C79003A2071 /* Settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
+		3752B34F25118C79003A2071 /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		3752B35025118C79003A2071 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3752B35725118DA1003A2071 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		3755FDF5250F889400C22AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37BFD2B6250ED4A9004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
-		37BFD2BA250EF3AE004F427F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		37BFD2BC250EF3FA004F427F /* SettingsRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRules.swift; sourceTree = "<group>"; };
-		37BFD2C0250EF420004F427F /* Settings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
-		37BFD2C2250EF426004F427F /* SettingsOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
-		37BFD2C4250EF434004F427F /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		37CD5130250C786F005B3041 /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
 		37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
 		37CD5134250C78BA005B3041 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				191A8694250305F400389B82 /* SearchView.swift */,
 				19BC0E0324F55E9F001B9C1D /* ContentView.swift */,
 				197EF5E5250E5B8000B57F91 /* LoginView.swift */,
+				3752B35725118DA1003A2071 /* BlurView.swift */,
 				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
@@ -296,12 +299,12 @@
 		37BFD2B9250EF37B004F427F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				374B876B25110B59005FD24A /* SettingsView.swift */,
-				37BFD2BC250EF3FA004F427F /* SettingsRules.swift */,
-				37BFD2BA250EF3AE004F427F /* Store.swift */,
-				37BFD2C2250EF426004F427F /* SettingsOption.swift */,
-				37BFD2C4250EF434004F427F /* ItemRow.swift */,
-				37BFD2C0250EF420004F427F /* Settings.json */,
+				3752B34F25118C79003A2071 /* ItemRow.swift */,
+				3752B34E25118C79003A2071 /* Settings.json */,
+				3752B34B25118C79003A2071 /* SettingsOption.swift */,
+				3752B34C25118C79003A2071 /* SettingsRules.swift */,
+				3752B34D25118C79003A2071 /* SettingsView.swift */,
+				3752B35025118C79003A2071 /* Store.swift */,
 			);
 			name = Settings;
 			path = ..;
@@ -459,8 +462,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */,
+				3752B35425118C7A003A2071 /* Settings.json in Resources */,
 				19BC0E0C24F55EA1001B9C1D /* LaunchScreen.storyboard in Resources */,
-				37BFD2C1250EF420004F427F /* Settings.json in Resources */,
 				191A86912502E89300389B82 /* Extension in Resources */,
 				3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */,
 				19A892A625110BF900F0BC84 /* Preview Content in Resources */,
@@ -596,9 +599,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BFD2C3250EF426004F427F /* SettingsOption.swift in Sources */,
 				19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */,
+				3752B35825118DA1003A2071 /* BlurView.swift in Sources */,
+				3752B35125118C7A003A2071 /* SettingsOption.swift in Sources */,
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
+				3752B35625118C7A003A2071 /* Store.swift in Sources */,
 				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
 				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
@@ -606,18 +611,17 @@
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,
 				197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */,
 				191A86972503061200389B82 /* AddNewVideoView.swift in Sources */,
+				3752B35225118C7A003A2071 /* SettingsRules.swift in Sources */,
 				19D1A4F824FBCB5A00641949 /* Player.swift in Sources */,
 				19D1A4F024FBC90500641949 /* Home.swift in Sources */,
 				191A868C2502E4AF00389B82 /* VideoCell.swift in Sources */,
 				19D1A4F224FBC9FB00641949 /* PlayerView.swift in Sources */,
+				3752B35525118C7A003A2071 /* ItemRow.swift in Sources */,
+				3752B35325118C7A003A2071 /* SettingsView.swift in Sources */,
 				191A868F2502E62700389B82 /* VideoStore.swift in Sources */,
-				37BFD2C5250EF434004F427F /* ItemRow.swift in Sources */,
 				191A86872502E2F800389B82 /* ProfileHeader.swift in Sources */,
 				19BC0E0424F55E9F001B9C1D /* ContentView.swift in Sources */,
 				191A8695250305F400389B82 /* SearchView.swift in Sources */,
-				37BFD2BD250EF3FA004F427F /* SettingsRules.swift in Sources */,
-				37BFD2BB250EF3AE004F427F /* Store.swift in Sources */,
-				374B876C25110B59005FD24A /* SettingsView.swift in Sources */,
 				19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */,
 				191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */,
 				374B876625110680005FD24A /* PlayerAnimation.swift in Sources */,
