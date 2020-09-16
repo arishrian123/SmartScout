@@ -132,8 +132,7 @@ struct LoginView: View {
                                         .foregroundColor((Color("color1")))
                                     }
                                     .padding()
-                                    .background(BlurView(style: .regular))
-                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    
                                 }.padding(.trailing, 20)
                             }.padding()
                         }

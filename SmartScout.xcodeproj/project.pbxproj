@@ -45,6 +45,8 @@
 		3752B35825118DA1003A2071 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752B35725118DA1003A2071 /* BlurView.swift */; };
 		3755FDF0250F7A8400C22AC6 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */; };
 		3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755FDF5250F889400C22AC6 /* Assets.xcassets */; };
+		376E6F3B25125CCC0065458F /* ScoutTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6F3A25125CCC0065458F /* ScoutTabBar.swift */; };
+		376E6F3F251266E90065458F /* PopUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376E6F3E251266E90065458F /* PopUpMenu.swift */; };
 		37B8161E250E340C00E17DF9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 37B8161D250E340C00E17DF9 /* SDWebImage */; };
 		37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5130250C786F005B3041 /* Poppins-Light.otf */; };
 		37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */; };
@@ -130,6 +132,8 @@
 		3752B35025118C79003A2071 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		3752B35725118DA1003A2071 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		3755FDF5250F889400C22AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		376E6F3A25125CCC0065458F /* ScoutTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutTabBar.swift; sourceTree = "<group>"; };
+		376E6F3E251266E90065458F /* PopUpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpMenu.swift; sourceTree = "<group>"; };
 		37BFD2B6250ED4A9004F427F /* Unknown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Unknown.gif; sourceTree = "<group>"; };
 		37CD5130250C786F005B3041 /* Poppins-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.otf"; sourceTree = "<group>"; };
 		37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				19BC0E0324F55E9F001B9C1D /* ContentView.swift */,
 				197EF5E5250E5B8000B57F91 /* LoginView.swift */,
 				3752B35725118DA1003A2071 /* BlurView.swift */,
+				376E6F3925125CAE0065458F /* TabBarView */,
 				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
 				191A868D2502E4BB00389B82 /* ProfileScreen */,
@@ -294,6 +299,15 @@
 				374B876525110680005FD24A /* PlayerAnimation.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		376E6F3925125CAE0065458F /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				376E6F3A25125CCC0065458F /* ScoutTabBar.swift */,
+				376E6F3E251266E90065458F /* PopUpMenu.swift */,
+			);
+			path = TabBarView;
 			sourceTree = "<group>";
 		};
 		37BFD2B9250EF37B004F427F /* Settings */ = {
@@ -604,6 +618,7 @@
 				3752B35125118C7A003A2071 /* SettingsOption.swift in Sources */,
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
 				3752B35625118C7A003A2071 /* Store.swift in Sources */,
+				376E6F3F251266E90065458F /* PopUpMenu.swift in Sources */,
 				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
 				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
@@ -623,6 +638,7 @@
 				19BC0E0424F55E9F001B9C1D /* ContentView.swift in Sources */,
 				191A8695250305F400389B82 /* SearchView.swift in Sources */,
 				19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */,
+				376E6F3B25125CCC0065458F /* ScoutTabBar.swift in Sources */,
 				191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */,
 				374B876625110680005FD24A /* PlayerAnimation.swift in Sources */,
 				191A8693250304E900389B82 /* TabBarView.swift in Sources */,
