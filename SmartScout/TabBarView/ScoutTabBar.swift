@@ -36,6 +36,7 @@ struct CustomTabs : View {
     
     @Binding var index : Int
     @State var showMenu = false
+    @State var isSpin = false
    
     var body : some View{
         
@@ -62,7 +63,7 @@ struct CustomTabs : View {
                             Circle()
                                 .foregroundColor(Color.white)
                                 .frame(width: 62, height: 62)
-                                .offset(y:-10)
+                                .offset(y: -10)
                             
                             Image(systemName: "house")
                                 .resizable()
@@ -136,8 +137,7 @@ struct CustomTabs : View {
                     PopUpMenu()
                         .offset(y: -50)
                 }
-                
-                
+ 
                 Circle()
                     .foregroundColor(Color.white)
                     .frame(width: 75, height: 75)
@@ -147,10 +147,13 @@ struct CustomTabs : View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 60, height: 60)
                     .foregroundColor(Color("color1"))
+                    .rotationEffect((Angle(degrees: self.isSpin ? 90 : 0)))
+                    .animation(Animation.linear(duration: 0.2))
                     
                     .onTapGesture {
                         
                         self.showMenu.toggle()
+                        self.isSpin.toggle()
                         
                 }
                 
@@ -240,6 +243,7 @@ struct CustomTabs : View {
                 
                 
             }
+                
         }
         .padding(.horizontal, 25)
         .padding(.vertical, 0)
