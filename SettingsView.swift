@@ -13,17 +13,16 @@ struct SettingsView: View {
         from: "Settings.json")
   
     var body: some View {
-        
-        VStack {
-            
-        
-        NavigationView {
+
+        NavigationView() {
             List {
                 ForEach(settings) { section in
                     Section(header: Text(section.name)) {
                     
                     ForEach(section.item) { item in
+                        NavigationLink(destination: SettingsDetailView(item: item)){
                         ItemRow(item: item)
+                        }
                     }
                     }
                 }
@@ -33,7 +32,7 @@ struct SettingsView: View {
     }
 }
 }
-}
+
     struct Settingsview_Previews: PreviewProvider {
         static var previews: some View {
             SettingsView()

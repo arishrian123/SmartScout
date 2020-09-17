@@ -72,56 +72,9 @@ struct Home : View {
                         
                         
                     }
-                    
+                      
             }
-                    
             
-            VStack{
-                
-                HStack(spacing: 15){
-                    
-                    Button(action: {
-                        
-                        self.top = 0
-                        
-                    }) {
-                        
-                        Text("Age")
-                            .foregroundColor(self.top == 0 ? .white : Color.white.opacity(0.45))
-                            .fontWeight(self.top == 0 ? .bold : .none)
-                            .padding(.vertical)
-                        
-        
-                            Picker(selection: $ageType, label: Text("Select")){
-                                ForEach(0 ..< ageTypes.count){
-                                    Text(self.ageTypes[$0])
-                                
-                                }
-                            }
-                            
-                        
-                    }
-                    Button(action: {
-                        
-                        self.top = 1
-                        
-                    }) {
-                        
-                        Text("Location")
-                            .foregroundColor(self.top == 1 ? .white : Color.white.opacity(0.45))
-                            .fontWeight(self.top == 1 ? .bold : .none)
-                            .padding(.vertical)
-                    }
-                }
-                
-                Picker(selection: $locationType, label: Text("Select")){
-                                               ForEach(0 ..< locationTypes.count){
-                                                   Text(self.locationTypes[$0])
-                                                  
-                                               }
-                                           }
-                Spacer()
-                
                 HStack{
                     
                     Spacer()
@@ -171,7 +124,7 @@ struct Home : View {
                     }
                     .padding(.bottom, 55)
                     .padding(.trailing)
-                }
+                
                 
             }
                 
@@ -182,4 +135,5 @@ struct Home : View {
         .background(Color.black.edgesIgnoringSafeArea(.all))
         .edgesIgnoringSafeArea(.all)
     }
+
 }

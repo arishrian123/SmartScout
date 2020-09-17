@@ -20,7 +20,7 @@ struct ContentView: View {
             SplashScreen()
                             
         } else{
-            ScoutTabBar()
+            LoginView(data: data)
         }
         }
         .onAppear{

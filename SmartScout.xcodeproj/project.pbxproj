@@ -25,6 +25,8 @@
 		19BC0E0C24F55EA1001B9C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BC0E0A24F55EA1001B9C1D /* LaunchScreen.storyboard */; };
 		19BC0E1724F55EA1001B9C1D /* SmartScoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E1624F55EA1001B9C1D /* SmartScoutTests.swift */; };
 		19BC0E2224F55EA1001B9C1D /* SmartScoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC0E2124F55EA1001B9C1D /* SmartScoutUITests.swift */; };
+		19BCF7A32513A9DF0026ED1E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCF7A22513A9DF0026ED1E /* LoginViewModel.swift */; };
+		19BCF7A52513B86A0026ED1E /* SettingsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BCF7A42513B86A0026ED1E /* SettingsDetailView.swift */; };
 		19D1A4F024FBC90500641949 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4EF24FBC90500641949 /* Home.swift */; };
 		19D1A4F224FBC9FB00641949 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4F124FBC9FB00641949 /* PlayerView.swift */; };
 		19D1A4F424FBCA9900641949 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4F324FBCA9900641949 /* Video.swift */; };
@@ -113,6 +115,8 @@
 		19BC0E1D24F55EA1001B9C1D /* SmartScoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartScoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BC0E2124F55EA1001B9C1D /* SmartScoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScoutUITests.swift; sourceTree = "<group>"; };
 		19BC0E2324F55EA1001B9C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19BCF7A22513A9DF0026ED1E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		19BCF7A42513B86A0026ED1E /* SettingsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDetailView.swift; sourceTree = "<group>"; };
 		19D1A4EF24FBC90500641949 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		19D1A4F124FBC9FB00641949 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		19D1A4F324FBCA9900641949 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 				19BC0E0D24F55EA1001B9C1D /* Info.plist */,
 				3755FDF5250F889400C22AC6 /* Assets.xcassets */,
 				374B8767251108B0005FD24A /* Unknown.gif */,
+				19BCF7A22513A9DF0026ED1E /* LoginViewModel.swift */,
 			);
 			path = SmartScout;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				3752B34C25118C79003A2071 /* SettingsRules.swift */,
 				3752B34D25118C79003A2071 /* SettingsView.swift */,
 				3752B35025118C79003A2071 /* Store.swift */,
+				19BCF7A42513B86A0026ED1E /* SettingsDetailView.swift */,
 			);
 			name = Settings;
 			path = ..;
@@ -623,6 +629,7 @@
 				3752B35625118C7A003A2071 /* Store.swift in Sources */,
 				376E6F3F251266E90065458F /* PopUpMenu.swift in Sources */,
 				37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */,
+				19BCF7A52513B86A0026ED1E /* SettingsDetailView.swift in Sources */,
 				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
@@ -636,6 +643,7 @@
 				191A868C2502E4AF00389B82 /* VideoCell.swift in Sources */,
 				19D1A4F224FBC9FB00641949 /* PlayerView.swift in Sources */,
 				3752B35525118C7A003A2071 /* ItemRow.swift in Sources */,
+				19BCF7A32513A9DF0026ED1E /* LoginViewModel.swift in Sources */,
 				3752B35325118C7A003A2071 /* SettingsView.swift in Sources */,
 				191A868F2502E62700389B82 /* VideoStore.swift in Sources */,
 				191A86872502E2F800389B82 /* ProfileHeader.swift in Sources */,
