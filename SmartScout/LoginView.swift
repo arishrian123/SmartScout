@@ -22,6 +22,7 @@ struct LoginView: View {
     var userTypes = ["Parent", "Scout"]
     let db = Firestore.firestore()
     var data: VideoStore
+    @ObservedObject var loginViewModel = LoginViewModel()
     
     let width = UIScreen.main.bounds.width
     let height = UIScreen.main.bounds.height
@@ -31,7 +32,7 @@ struct LoginView: View {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
             if let error = error {
-                self.isSuccess = false
+                self.loginViewModel.isLoggedIn = false
                 print(error.localizedDescription)
             } else if let result = result {
                 
@@ -40,7 +41,7 @@ struct LoginView: View {
                  .setData(["email": self.email,
                  "type": self.userTypes[self.userType]])*/
                 
-                self.isSuccess = true
+                self.loginViewModel.isLoggedIn = true
             }
         }
     }
@@ -48,7 +49,7 @@ struct LoginView: View {
     var body: some View {
         
         ZStack{
-            if !isSuccess {
+            if !loginViewModel.isLoggedIn{
                 ZStack {
                     
                     Circle()
@@ -135,7 +136,9 @@ struct LoginView: View {
                                     
                                     Spacer()
                                     
-                                    Button(action: {}){
+                                    Button(action: {
+                                        self.login()
+                                    }){
                                         Text("Login")
                                         .font(Font.custom("Poppins-Light", size: 20))
                                         .foregroundColor((Color("color1")))
@@ -154,8 +157,7 @@ struct LoginView: View {
                         
                     }
                 }
-                
-                
+   
             }
             else {
                 TabBarView(data: data)
