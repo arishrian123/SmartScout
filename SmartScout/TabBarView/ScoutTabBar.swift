@@ -37,6 +37,7 @@ struct CustomTabs : View {
     @Binding var index : Int
     @State var showMenu = false
     @State var isSpin = false
+  
    
     var body : some View{
         
@@ -46,6 +47,7 @@ struct CustomTabs : View {
                 
                 self.index = 0
                 
+                
             }) {
                 
                 VStack{
@@ -53,6 +55,7 @@ struct CustomTabs : View {
                     if self.index != 0{
                         
                         Image(systemName: "house")
+
                             .foregroundColor(Color.black.opacity(0.2))
                         
                     }
@@ -78,13 +81,12 @@ struct CustomTabs : View {
                         }
                         
                         
-                        Text("Home").foregroundColor(Color.black.opacity(0.7))
+                        Text("Home").foregroundColor(Color.black.opacity(0.5))
                             .font(Font.custom("Poppins-Light", size: 10))
                             .offset(y: -12)
                         
                     }
                 }
-                
                 
             }
             Spacer(minLength: 0)
@@ -121,7 +123,7 @@ struct CustomTabs : View {
                             
                         }
                         
-                        Text("Search").foregroundColor(Color.black.opacity(0.7))
+                        Text("Search").foregroundColor(Color.black.opacity(0.5))
                             .font(Font.custom("Poppins-Light", size: 10))
                             .offset(y: -12)
                     }
@@ -136,6 +138,7 @@ struct CustomTabs : View {
                 if self.showMenu {
                     PopUpMenu()
                         .offset(y: -50)
+                    
                 }
  
                 Circle()
@@ -195,7 +198,7 @@ struct CustomTabs : View {
                                 .offset(y: -20)
                                 .padding(.bottom, -20)
                         }
-                        Text("Profile").foregroundColor(Color.black.opacity(0.7))
+                        Text("Profile").foregroundColor(Color.black.opacity(0.5))
                             .font(Font.custom("Poppins-Light", size: 10))
                             .offset(y: -12)
                     }
@@ -234,7 +237,7 @@ struct CustomTabs : View {
                                 .offset(y: -20)
                                 .padding(.bottom, -20)
                         }
-                        Text("Settings").foregroundColor(Color.black.opacity(0.7))
+                        Text("Settings").foregroundColor(Color.black.opacity(0.5))
                             .font(Font.custom("Poppins-Light", size: 10))
                             .offset(y: -12)
                         

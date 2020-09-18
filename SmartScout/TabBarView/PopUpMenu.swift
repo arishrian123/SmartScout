@@ -11,7 +11,7 @@ import SwiftUI
 struct PopUpMenu: View {
     var body: some View {
         
-        HStack(spacing: 40) {
+        HStack(spacing: 50) {
             
             ZStack {
                 

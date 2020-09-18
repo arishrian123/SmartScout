@@ -18,6 +18,7 @@ struct LoginView: View {
     @State var isSuccess = false
     @State var userType = 0
     @State var moveAlongCircle = false
+    @State var isPresent = false
     var userTypes = ["Parent", "Scout"]
     let db = Firestore.firestore()
     var data: VideoStore
@@ -55,7 +56,15 @@ struct LoginView: View {
                         .foregroundColor(Color("color1"))
                         .offset(x: width/1.9, y: height/(-2.8))
                         .shadow(radius: 10)
+                    .scaleEffect(isPresent ? (width/20) : -2)
+                    .animation(.easeInOut(duration: 20))
                     
+                    
+                    .onAppear{
+                               DispatchQueue.main.asyncAfter(deadline: .now() + 1.1){
+                                   self.isPresent.toggle()
+                        }
+                    }
                     Circle()
                         .frame( width: width/8.5, height: height/8.5)
                         .foregroundColor(Color("color1"))

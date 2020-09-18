@@ -53,6 +53,7 @@
 		37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */; };
 		37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 37CD5134250C78BA005B3041 /* Poppins-Medium.otf */; };
 		37CD513A250C795C005B3041 /* BackgroundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CD5139250C795C005B3041 /* BackgroundAnimation.swift */; };
+		37E9B76B25139D3C00A58A71 /* ScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9B76A25139D3C00A58A71 /* ScreenTest.swift */; };
 		7FBA706CBBBC0D7EA64C24E7 /* Pods_SmartScout_SmartScoutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EEC06F51D33E023A57435A /* Pods_SmartScout_SmartScoutUITests.framework */; };
 		BBE2246B4F2D7F8C02FC16B8 /* Pods_SmartScout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBD2C653F499B03436D1C2B /* Pods_SmartScout.framework */; };
 		FEA69EC279A8D98BBB250A92 /* Pods_SmartScoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FC857845375A00C5C95726 /* Pods_SmartScoutTests.framework */; };
@@ -141,6 +142,7 @@
 		37CD5132250C787D005B3041 /* Poppins-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.otf"; sourceTree = "<group>"; };
 		37CD5134250C78BA005B3041 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
 		37CD5139250C795C005B3041 /* BackgroundAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAnimation.swift; sourceTree = "<group>"; };
+		37E9B76A25139D3C00A58A71 /* ScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTest.swift; sourceTree = "<group>"; };
 		5637A89A6AEE84FCF94650E9 /* Pods-SmartScoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScoutTests.release.xcconfig"; path = "Target Support Files/Pods-SmartScoutTests/Pods-SmartScoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CBD2C653F499B03436D1C2B /* Pods_SmartScout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartScout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEC06F51D33E023A57435A /* Pods_SmartScout_SmartScoutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartScout_SmartScoutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				376E6F3A25125CCC0065458F /* ScoutTabBar.swift */,
+				37E9B76A25139D3C00A58A71 /* ScreenTest.swift */,
 				376E6F7C2512B5A50065458F /* ButtonNavigation.swift */,
 				376E6F3E251266E90065458F /* PopUpMenu.swift */,
 			);
@@ -627,6 +630,7 @@
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
 				376E6F7D2512B5A50065458F /* ButtonNavigation.swift in Sources */,
+				37E9B76B25139D3C00A58A71 /* ScreenTest.swift in Sources */,
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,
 				197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */,
 				191A86972503061200389B82 /* AddNewVideoView.swift in Sources */,
