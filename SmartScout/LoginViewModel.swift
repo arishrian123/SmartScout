@@ -15,4 +15,10 @@ class LoginViewModel: ObservableObject {
             UserDefaults.standard.set(self.isLoggedIn, forKey: "isLoggedIn")
         }
     }
+    
+    @Published var counter: Int = UserDefaults.standard.integer(forKey: "counter"){
+        didSet {
+            UserDefaults.standard.set(self.counter, forKey: "counter")
+        }
+    }
 }

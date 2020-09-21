@@ -11,21 +11,27 @@ import SwiftUI
 struct ScoutTabBar: View {
     
     @State var index = 0
+    var data: VideoStore
+    
     var body: some View {
         
-        VStack{
+        ZStack {
+            if index == 0{
+            Home(data: data)
+            } else if index == 1{
+                SearchView()
+            } else if index == 2{
+                ProfileView()
+            } else if index == 3{
+                SettingsView()
+            }
             
-            Spacer()
-            
+            VStack{
+                Spacer()
             CustomTabs(index: self.$index)
+            }
+            
         }
-        .background(Color.black.opacity(0.1).edgesIgnoringSafeArea((.top)))
-    }
-}
-
-struct ScoutTabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        ScoutTabBar()
     }
 }
 
@@ -175,7 +181,8 @@ struct CustomTabs : View {
                     
                     if self.index != 2{
                         
-                        Image(systemName: "person.crop.circle").foregroundColor(Color.black.opacity(0.2))
+                        Image(systemName: "person.crop.circle")
+                            .foregroundColor(Color.black.opacity(0.2))
                     }
                     else{
                         

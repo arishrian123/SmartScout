@@ -8,17 +8,19 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 class FirestoreData: ObservableObject {
     
     let db = Firestore.firestore()
+    let currentUser = Auth.auth().currentUser?.uid
     
     @Published var liked: Bool = false
     @Published var userType: String = ""
     
     init(){
         checkLike()
-        checkUserType()
+        checkUserType(UID: currentUser!)
     }
     
     func checkLike() {
@@ -41,9 +43,9 @@ class FirestoreData: ObservableObject {
             }
     }
     
-    func checkUserType() {
+    func checkUserType(UID: String) {
         
-        db.collection("users").document("MvqHJkYNMXT4wcAsdnEEHVTx6tC3").addSnapshotListener{ documentSnapshot, error in
+        db.collection("users").document(UID).addSnapshotListener{ documentSnapshot, error in
             
             guard let documents = documentSnapshot else {
                 print("Error fetching documents: \(error!)")

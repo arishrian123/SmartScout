@@ -160,7 +160,7 @@ struct LoginView: View {
    
             }
             else {
-                TabBarView(data: data)
+                ScoutTabBar(data: data)
             }
         }
     }

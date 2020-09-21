@@ -52,6 +52,7 @@ struct PlayerView : View {
                     
                     if self.data.videos[i].replay{
                         
+                        VStack(spacing: 35){
                         Button(action: {
                             
                             // playing the video again...
@@ -70,6 +71,7 @@ struct PlayerView : View {
                         
                         if(self.firestoreData.userType == "Scout"){
                         Button(action: {
+                            print(self.firestoreData.userType)
                             self.liked.toggle()
                             self.likedToDB()
                             self.data.videos[i].liked.toggle()
@@ -80,12 +82,16 @@ struct PlayerView : View {
                                 
                                 Image(systemName: "suit.heart.fill")
                                     .font(.title)
-                                    .foregroundColor(self.liked ? .red : .white)
-                                    .scaleEffect(self.liked ? 2 : 1)
+                                    .foregroundColor(self.data.videos[i].liked ? .red : .white)
+                                    .scaleEffect(self.data.videos[i].liked ? 2 : 1)
                                 
                             }
-                        }.offset(x: 150, y: 0)
                         }
+                        }
+                        }
+                        .frame(width: 100, height: 200)
+                        .background(BlurView(style: .regular))
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                         
                     }
                 }

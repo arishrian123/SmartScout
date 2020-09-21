@@ -70,7 +70,7 @@ class VideoStore: ObservableObject {
                         DispatchQueue.main.async {
                             
                             self.videos.append(Video(id: i, player: AVPlayer(url: url!), replay: false, liked: false))
-                            print(self.videos[0].id)
+
                             
                             if self.videos.count >= 1 {
                                 self.isEmpty = false

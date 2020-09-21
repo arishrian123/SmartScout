@@ -247,6 +247,7 @@
 				197EF5E5250E5B8000B57F91 /* LoginView.swift */,
 				376F88D02515381C005D8E15 /* Login2.swift */,
 				3752B35725118DA1003A2071 /* BlurView.swift */,
+				19BCF7A22513A9DF0026ED1E /* LoginViewModel.swift */,
 				376E6F3925125CAE0065458F /* TabBarView */,
 				37697EDA250A5C8200429E20 /* SplashScreen */,
 				19D2D1DC25002273009FA73E /* HomeScreen */,
@@ -257,7 +258,6 @@
 				19BC0E0D24F55EA1001B9C1D /* Info.plist */,
 				3755FDF5250F889400C22AC6 /* Assets.xcassets */,
 				374B8767251108B0005FD24A /* Unknown.gif */,
-				19BCF7A22513A9DF0026ED1E /* LoginViewModel.swift */,
 			);
 			path = SmartScout;
 			sourceTree = "<group>";
