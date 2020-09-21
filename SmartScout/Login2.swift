@@ -198,9 +198,10 @@ struct FirstView : View {
                     
                     Divider()
                         .background(Color("color1").opacity(0.5))
+                    
                 }
                 
-                HStack{
+                VStack{
                     
                     Spacer()
                     
@@ -209,13 +210,38 @@ struct FirstView : View {
                         
                         Text("Sign Up")
                             
-                            .fontWeight(.bold)
+                            .font(Font.custom("Poppins-SemiBold", size: 25))
                             .foregroundColor(.white)
                             .padding(.vertical)
                             .padding(.horizontal,45)
-                            .foregroundColor(Color("color1"))
+                            .background(Color("color1"))
                             .clipShape(Capsule())
+  
+                    }.offset(x: 30)
+                    
+                    Spacer()
+                
+                    ZStack{
+                        
+                         Image("White Logo Square")
+                            .zIndex(1)
+                            .offset(x: -120)
+
+                    Button(action: {}) {
+                        
+                        Text("Sign in with Apple")
                             
+                            .fontWeight(.medium)
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .padding(.vertical)
+                            .padding(.horizontal,90)
+                            .background(Color(.black))
+                            .clipShape(RoundedRectangle(cornerRadius: 5 ))
+                        
+                       
+                    }.offset(x: 20)
+                        
                         
                     }
                     

@@ -11,7 +11,7 @@ struct SettingsView: View {
     
     let settings = Bundle.main.decode([MenuSection].self,
         from: "Settings.json")
-  
+    
     var body: some View {
 
         NavigationView() {
@@ -24,11 +24,12 @@ struct SettingsView: View {
                         ItemRow(item: item)
                         }
                     }
-                    }
+                    }.font(Font.custom("Poppins-Light", size: 16))
                 }
             }
             .navigationBarTitle("Settings")
         .listStyle(GroupedListStyle())
+            
     }
 }
 }
