@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct ScoutTabBar: View {
     
@@ -264,3 +265,9 @@ struct CustomTabs : View {
 }
 
 
+
+struct ScoutTabBar_Previews: PreviewProvider {
+    static var previews: some View {
+        ScoutTabBar(data: VideoStore())
+    }
+}

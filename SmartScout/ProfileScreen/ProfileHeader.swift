@@ -16,7 +16,7 @@ struct ProfileHeader: View {
                 Spacer()
                 
                 VStack {
-                    Image("ollie")
+                    Image("pic")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 120, height: 120)

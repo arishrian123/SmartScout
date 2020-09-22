@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "avc-mpg-how-to-grow-and-trim-a-short-beard-stage-sp.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
