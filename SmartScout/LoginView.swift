@@ -20,8 +20,8 @@ struct LoginView: View {
     @State var moveAlongCircle = false
     @State var isPresent = false
     var userTypes = ["Parent", "Scout"]
-    let db = Firestore.firestore()
     var data: VideoStore
+    let db = Firestore.firestore()
     @ObservedObject var loginViewModel = LoginViewModel()
     
     let width = UIScreen.main.bounds.width

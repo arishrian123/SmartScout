@@ -16,6 +16,9 @@
 		191A86972503061200389B82 /* AddNewVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A86962503061200389B82 /* AddNewVideoView.swift */; };
 		191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191A869A2503180E00389B82 /* GoogleService-Info.plist */; };
 		191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A869C2503B66A00389B82 /* SplashScreen.swift */; };
+		193DF022251B404900573F14 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 193DF021251B404900573F14 /* Lottie */; };
+		193DF028251B409F00573F14 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DF027251B409F00573F14 /* LottieView.swift */; };
+		193DF02C251B40B800573F14 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 193DF02B251B40B800573F14 /* heart.json */; };
 		197EF5E22508DF5800B57F91 /* video4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 197EF5E12508DF5800B57F91 /* video4.mov */; };
 		197EF5E6250E5B8000B57F91 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197EF5E5250E5B8000B57F91 /* LoginView.swift */; };
 		19A892A625110BF900F0BC84 /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 19A892A525110BF900F0BC84 /* Preview Content */; };
@@ -103,6 +106,8 @@
 		191A86962503061200389B82 /* AddNewVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewVideoView.swift; sourceTree = "<group>"; };
 		191A869A2503180E00389B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		191A869C2503B66A00389B82 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		193DF027251B409F00573F14 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		193DF02B251B40B800573F14 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		197EF5E12508DF5800B57F91 /* video4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.mov; sourceTree = "<group>"; };
 		197EF5E5250E5B8000B57F91 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		19A892A525110BF900F0BC84 /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
@@ -169,6 +174,7 @@
 				3755FDF0250F7A8400C22AC6 /* SDWebImageSwiftUI in Frameworks */,
 				37B8161E250E340C00E17DF9 /* SDWebImage in Frameworks */,
 				BBE2246B4F2D7F8C02FC16B8 /* Pods_SmartScout.framework in Frameworks */,
+				193DF022251B404900573F14 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +241,8 @@
 		19BC0DFE24F55E9F001B9C1D /* SmartScout */ = {
 			isa = PBXGroup;
 			children = (
+				193DF027251B409F00573F14 /* LottieView.swift */,
+				193DF02B251B40B800573F14 /* heart.json */,
 				19A892A525110BF900F0BC84 /* Preview Content */,
 				197EF5E02508DF3F00B57F91 /* Videos */,
 				191A869A2503180E00389B82 /* GoogleService-Info.plist */,
@@ -397,6 +405,7 @@
 			packageProductDependencies = (
 				37B8161D250E340C00E17DF9 /* SDWebImage */,
 				3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */,
+				193DF021251B404900573F14 /* Lottie */,
 			);
 			productName = SmartScout;
 			productReference = 19BC0DFC24F55E9F001B9C1D /* SmartScout.app */;
@@ -476,6 +485,7 @@
 			packageReferences = (
 				37B8161C250E340B00E17DF9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				3755FDEE250F7A8400C22AC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				193DF020251B404900573F14 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 19BC0DFD24F55E9F001B9C1D /* Products */;
 			projectDirPath = "";
@@ -495,6 +505,7 @@
 			files = (
 				37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */,
 				3752B35425118C7A003A2071 /* Settings.json in Resources */,
+				193DF02C251B40B800573F14 /* heart.json in Resources */,
 				19BC0E0C24F55EA1001B9C1D /* LaunchScreen.storyboard in Resources */,
 				191A86912502E89300389B82 /* Extension in Resources */,
 				3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */,
@@ -659,6 +670,7 @@
 				191A868F2502E62700389B82 /* VideoStore.swift in Sources */,
 				191A86872502E2F800389B82 /* ProfileHeader.swift in Sources */,
 				19BC0E0424F55E9F001B9C1D /* ContentView.swift in Sources */,
+				193DF028251B409F00573F14 /* LottieView.swift in Sources */,
 				191A8695250305F400389B82 /* SearchView.swift in Sources */,
 				19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */,
 				371BABE8251904C60077FCA5 /* sliderFeedbackView.swift in Sources */,
@@ -746,6 +758,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -806,6 +819,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1001,6 +1015,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		193DF020251B404900573F14 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
 		3755FDEE250F7A8400C22AC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
@@ -1020,6 +1042,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		193DF021251B404900573F14 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 193DF020251B404900573F14 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		3755FDEF250F7A8400C22AC6 /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3755FDEE250F7A8400C22AC6 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;

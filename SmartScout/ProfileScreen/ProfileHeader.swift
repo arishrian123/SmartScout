@@ -26,11 +26,11 @@ struct ProfileHeader: View {
                         .padding(.top, 60)
                         .zIndex(1)
                     
-                    Text("Oliver Cordingley").font(Font.custom("Poppins-Medium", size: 25))
+                    Text("Erik Bognar").font(Font.custom("Poppins-Medium", size: 25))
                         .foregroundColor(.white)
                         .padding(.top, 12)
                     
-                    Text("@ollie")
+                    Text("@erik")
                         .font(Font.custom("Poppins-Light", size: 15))
                         .foregroundColor(.white)
                         .opacity(0.7)

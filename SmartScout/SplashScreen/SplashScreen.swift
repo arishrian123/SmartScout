@@ -25,6 +25,9 @@ struct SplashScreen: View {
         
         ZStack {
             
+            PlayerAnimation()
+            
+            
             Text("Smart")
                 .foregroundColor(Color.white)
                 .font(Font.custom("Poppins-Light", size: 55))

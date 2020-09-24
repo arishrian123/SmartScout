@@ -20,7 +20,7 @@ struct ContentView: View {
             SplashScreen()
                             
         } else{
-            LoginView(data: data)
+            Login2(data: data)
         }
         }
         .onAppear{

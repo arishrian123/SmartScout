@@ -11,8 +11,6 @@ import SDWebImageSwiftUI
 
 struct PlayerAnimation:  View {
     
-    
-    @Binding var isAnimating: Bool
     @State var isOpacity = false
     
     var body: some View {
@@ -42,6 +40,6 @@ struct PlayerAnimation:  View {
 struct PlayerAnimation_Previews: PreviewProvider {
     static var previews: some View {
         
-        PlayerAnimation(isAnimating: .constant(false))
+        PlayerAnimation()
 }
 }

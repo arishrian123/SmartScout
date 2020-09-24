@@ -42,6 +42,13 @@ struct Home : View {
         
         ZStack{
             
+            /*VStack{
+                Text("SmartScout")
+                
+            }.frame(width: 200, height: 100)
+            .background(BlurView(style: .regular))
+            .zIndex(1)*/
+            
             if(self.firestoreData.liked && self.firestoreData.userType == "Parent") {
                 
                 Text("")

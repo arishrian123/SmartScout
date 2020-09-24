@@ -13,6 +13,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
 pod 'SDWebImageSwiftUI'
 
+
   target 'SmartScoutTests' do
     inherit! :search_paths
     # Pods for testing

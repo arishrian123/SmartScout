@@ -80,11 +80,15 @@ struct PlayerView : View {
                             
                             VStack(spacing: 8){
                                 
+                                if !liked {
                                 Image(systemName: "suit.heart.fill")
                                     .font(.title)
-                                    .foregroundColor(self.data.videos[i].liked ? .red : .white)
-                                    .scaleEffect(self.data.videos[i].liked ? 2 : 1)
-                                
+                                    .foregroundColor(.white)
+                                    .frame(width: 70, height: 70)
+                                } else {
+                                    LottieView(filename: "heart")
+                                        .frame(width: 70, height: 70)
+                                }
                             }
                         }
                         }
