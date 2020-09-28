@@ -80,7 +80,7 @@ struct PlayerView : View {
                             
                             VStack(spacing: 8){
                                 
-                                if !liked {
+                                if !self.liked {
                                 Image(systemName: "suit.heart.fill")
                                     .font(.title)
                                     .foregroundColor(.white)

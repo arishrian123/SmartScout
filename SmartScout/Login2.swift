@@ -18,7 +18,9 @@ struct Login2: View {
     @State var user = ""
     @State var pass = ""
     @State var rePass = ""
-    @State var gradient = [Color("color2"), Color("color1")]
+    @State var gradient = [Color("color4"), Color("color3")]
+    @State var startPoint = UnitPoint(x: 1.8, y: 0)
+    @State var endPoint = UnitPoint(x: -1, y: 0)
     
     let db = Firestore.firestore()
     @ObservedObject var loginViewModel = LoginViewModel()
@@ -57,7 +59,8 @@ struct Login2: View {
                         
                         ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
                             
-                            Color("color1")
+                            (LinearGradient(gradient: Gradient(colors: self.gradient), startPoint: self.startPoint, endPoint: self.endPoint))
+                                
                                 .clipShape(CShape())
                             
                             
@@ -67,7 +70,6 @@ struct Login2: View {
                                 path.addArc(center: CGPoint(x: UIScreen.main.bounds.width - 120 , y: UIScreen.main.bounds.height - 50), radius: 40, startAngle: .zero, endAngle: .init(degrees: 180), clockwise: true)
                             }
                             .fill(Color.white)
-                            
                             
                             Button(action: {
                                 
@@ -143,7 +145,7 @@ struct Login2: View {
                                 Spacer()
                                 
                                 Button(action: {
-                                    login()
+                                    self.login()
                                 }) {
                                     
                                     Text("Login")
@@ -302,5 +304,12 @@ struct CShape : Shape {
         }
     }
 }
+
+struct login2_Previews: PreviewProvider {
+    static var previews: some View {
+        Login2(data: VideoStore())
+    }
+}
+
 
 

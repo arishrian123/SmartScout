@@ -10,8 +10,8 @@ import SwiftUI
 
 struct BackgroundAnimation: View {
     
-    @State var gradient = [Color("color2"), Color("color1")]
-    @State var startPoint = UnitPoint(x: 1.5, y: 0)
+    @State var gradient = [Color("color4"), Color("color3")]
+    @State var startPoint = UnitPoint(x: 0, y: 0)
     @State var endPoint = UnitPoint(x: 0, y: 0)
     @State var showGradient = false
     @State var isPresent = false
@@ -36,7 +36,7 @@ struct BackgroundAnimation: View {
                 self.isPresent.toggle()
                 withAnimation(.easeInOut(duration:  1.5)){
                 self.startPoint = UnitPoint(x: 1, y: 0)
-                    self.endPoint = UnitPoint(x: 0, y: 0.5)
+                    self.endPoint = UnitPoint(x: 0, y: 0)
             }
         }
     }
