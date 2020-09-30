@@ -25,8 +25,8 @@ struct ProfileView: View {
             .alwaysBounceVertical()
             .padding(.top, -54)
             .edgesIgnoringSafeArea(.all)
-            .shadow(color: .white, radius: 24, x: 0, y: 0)
-        }.background(Color.black.edgesIgnoringSafeArea(.all))
+            .shadow(color: .black, radius: 24, x: 0, y: 0)
+        }.background(Color("11grey").edgesIgnoringSafeArea(.all))
     }
     
     var layout: ASCollectionLayout<Int> {
