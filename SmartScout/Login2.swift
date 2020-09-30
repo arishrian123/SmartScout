@@ -19,7 +19,7 @@ struct Login2: View {
     @State var pass = ""
     @State var rePass = ""
     @State var gradient = [Color("1red"), Color("1orange")]
-    @State var startPoint = UnitPoint(x: 2, y: 0)
+    @State var startPoint = UnitPoint(x: 1.75, y: 0)
     @State var endPoint = UnitPoint(x: -1, y: 0)
     
     let db = Firestore.firestore()
@@ -258,7 +258,7 @@ struct Login2: View {
                                 
                                 Image("White Logo Square")
                                     .zIndex(1)
-                                    .offset(x: -120)
+                                    .offset(x: -120, y: 1)
                                 
                                 Button(action: {}) {
                                     

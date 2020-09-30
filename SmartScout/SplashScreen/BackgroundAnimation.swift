@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BackgroundAnimation: View {
     
-    @State var gradient = [Color("color4"), Color("color3")]
+    @State var gradient = [Color("1red"), Color("1orange")]
     @State var startPoint = UnitPoint(x: 0, y: 0)
     @State var endPoint = UnitPoint(x: 0, y: 0)
     @State var showGradient = false

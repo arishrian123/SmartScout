@@ -27,7 +27,7 @@ struct PlayerAnimation:  View {
             
                 .onAppear{
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.11) { withAnimation {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) { withAnimation {
                         self.isOpacity = true
                         
                         }

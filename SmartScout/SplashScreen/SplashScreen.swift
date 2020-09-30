@@ -29,7 +29,7 @@ struct SplashScreen: View {
             
             
             Text("Smart")
-                .foregroundColor(Color.black)
+                .foregroundColor(Color("11grey"))
                 .font(Font.custom("Poppins-Light", size: 55))
                 .offset(x: -105)
                 .offset(x: isVisible ? 27 : -250)
@@ -37,7 +37,7 @@ struct SplashScreen: View {
                 .zIndex(1)
             
             Text("Scout")
-                .foregroundColor(Color.black)
+                .foregroundColor(Color("11grey"))
                 .font(Font.custom("Poppins-Medium", size: 55))
                 .offset(x: 52)
                 .offset(x: isVisible ? 27: 250)
@@ -77,7 +77,7 @@ struct SplashScreen: View {
                         }
                     }
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.99) {
                         withAnimation {
                             self.isSuccess = true
                         }
