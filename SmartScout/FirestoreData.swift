@@ -22,6 +22,7 @@ class FirestoreData: ObservableObject {
     init(){
         checkLike()
         checkUserType(UID: currentUser!)
+        checkName(UID: currentUser!)
     }
     
     func checkLike() {
