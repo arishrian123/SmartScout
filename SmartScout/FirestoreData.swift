@@ -17,6 +17,7 @@ class FirestoreData: ObservableObject {
     
     @Published var liked: Bool = false
     @Published var userType: String = ""
+    @Published var name: String = ""
     
     init(){
         checkLike()
@@ -53,6 +54,20 @@ class FirestoreData: ObservableObject {
             }
         
             self.userType = documentSnapshot?.get("type") as! String
+            }
+        
+    }
+    
+    func checkName(UID: String) {
+        
+        db.collection("users").document(UID).addSnapshotListener{ documentSnapshot, error in
+            
+            guard let documents = documentSnapshot else {
+                print("Error fetching documents: \(error!)")
+                return
+            }
+        
+            self.userType = documentSnapshot?.get("name") as! String
             }
         
     }
