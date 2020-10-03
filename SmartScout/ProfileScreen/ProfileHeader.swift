@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ProfileHeader: View {
     
+    @ObservedObject var firestoreData = FirestoreData()
+    
     var body: some View {
         VStack {
             HStack {
@@ -27,6 +29,8 @@ struct ProfileHeader: View {
                         .zIndex(1)
                     
                     Text("Erik Bognar").font(Font.custom("Poppins-Medium", size: 25))
+                    Text(firestoreData.name).font(Font.custom("Poppins-Medium", size: 25))
+
                         .foregroundColor(.white)
                         .padding(.top, 12)
                     

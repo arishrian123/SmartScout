@@ -260,7 +260,9 @@ struct Login2: View {
                                     .zIndex(1)
                                     .offset(x: -120, y: 1)
                                 
-                                Button(action: {}) {
+                                Button(action: {
+                                    
+                                }) {
                                     
                                     Text("Sign in with Apple")
                                         
