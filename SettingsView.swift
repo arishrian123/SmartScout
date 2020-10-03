@@ -9,13 +9,17 @@ import SwiftUI
 
 struct SettingsView: View {
     
+
+    
     let settings = Bundle.main.decode([MenuSection].self,
         from: "Settings.json")
     
     var body: some View {
 
         NavigationView() {
+     
             List {
+                
                 ForEach(settings) { section in
                     Section(header: Text(section.name)) {
                     
@@ -23,15 +27,21 @@ struct SettingsView: View {
                         NavigationLink(destination: SettingsDetailView(item: item)){
                         ItemRow(item: item)
                         }
+                        
                     }
+                        
                     }.font(Font.custom("Poppins-Light", size: 16))
+                    
                 }
             }
             .navigationBarTitle("Settings")
+                
         .listStyle(GroupedListStyle())
             
     }
+        
 }
+    
 }
 
     struct Settingsview_Previews: PreviewProvider {

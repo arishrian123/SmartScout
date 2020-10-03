@@ -43,8 +43,12 @@ struct TabBarView: View {
                 .tabItem{
                     Image(systemName: "gear")
                     Text("Settings")
+        
             }.tag(4)
-        }
+        }.onAppear {
+            
+            UITabBar.appearance().backgroundColor = .black
+        }.accentColor(.orange)
     }
 }
 struct TabBarView_Previews: PreviewProvider {

@@ -22,17 +22,17 @@ struct ProfileHeader: View {
                         .frame(width: 120, height: 120)
                         .clipShape(Circle())
                         .clipped()
-                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                        .overlay(Circle().stroke(Color("12grey"), lineWidth: 4))
                         .padding(.top, 60)
                         .zIndex(1)
                     
-                    Text("Trevor Todd").font(Font.custom("Poppins-Medium", size: 25))
+                    Text("Erik Bognar").font(Font.custom("Poppins-Medium", size: 25))
                         .foregroundColor(.white)
                         .padding(.top, 12)
                     
-                    Text("@t_todd")
+                    Text("@e_bognar")
                         .font(Font.custom("Poppins-Light", size: 15))
-                        .foregroundColor(.white)
+                        .foregroundColor(.orange)
                         .opacity(0.7)
                         .padding(.top, 4)
                 }

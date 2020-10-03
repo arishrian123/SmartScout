@@ -18,7 +18,14 @@ struct SettingsDetailView: View {
         Button(action: {
             self.loginViewModel.isLoggedIn = false
         }){
+            
+            VStack {
+                
             Text(item.name)
+                .font(.largeTitle)
+                .foregroundColor(Color("11grey"))
+      
+            }
         }
     }
 }

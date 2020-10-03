@@ -157,7 +157,7 @@ struct Login2: View {
                                     
                                     Text("Login")
                                         .fontWeight(.bold)
-                                        .font(Font.custom("Poppins-SemiBold", size: 25))
+                                        .font(Font.custom("Poppins-SemiBold", size: 22.5))
                                         .foregroundColor(Color.white)
                                         .offset(x: -95)
                                         .padding(.vertical, 7)
@@ -242,11 +242,11 @@ struct Login2: View {
                                 
                                 Text("Sign Up")
                                     
-                                    .font(Font.custom("Poppins-SemiBold", size: 25))
+                                    .font(Font.custom("Poppins-SemiBold", size: 22.5))
                                     .foregroundColor(Color("11grey"))
                                     .offset(x: 95)
                                     .padding(.vertical, 7)
-                                    .padding(.horizontal, 125)
+                                    .padding(.horizontal, 145)
                                     .background(Color.white)
                                     .clipShape(Capsule())
                                 
