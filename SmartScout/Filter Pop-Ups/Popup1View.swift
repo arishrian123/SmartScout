@@ -25,6 +25,9 @@ struct Popup1View_Previews: PreviewProvider {
 struct Pop : View {
     
     @State var show = false
+    @State var gradient = [Color("1red"), Color("1orange")]
+    @State var startPoint = UnitPoint(x: 0, y: 1.75)
+    @State var endPoint = UnitPoint(x: 0, y: -1)
     
     var body: some View {
         
@@ -33,6 +36,13 @@ struct Pop : View {
             VStack {
                 
                 HStack{
+                    
+                    
+                    Capsule()
+                        .fill(LinearGradient(gradient: Gradient(colors: self.gradient), startPoint: self.startPoint, endPoint: self.endPoint))
+                         .rotationEffect(.degrees(-90))
+                    .frame(width: 120, height: 55)
+                        .offset(x: 305, y: 790)
 
                     Spacer()
                     
@@ -41,14 +51,14 @@ struct Pop : View {
                 Spacer()
             }
             
-            VStack(alignment: .center, spacing: 15) {
+            HStack(alignment: .center, spacing: 30) {
                 
                 if self.show{
                 
                 PopOver()
                     .background(Color.white)
-                    .cornerRadius(15)
-                    .offset(y: -450)
+                    .cornerRadius(25)
+                    .offset(x: 80, y: -130)
                     
                 }
                 
@@ -61,39 +71,45 @@ struct Pop : View {
                     
                 }) {
                     
-                    Image(systemName: self.show ? "arrow.up" : "arrow.up")
+                    Image(systemName: self.show ? "chevron.right.circle.fill" : "chevron.right.circle")
                         .resizable()
-                        .rotationEffect(.degrees( show ? 90 : 180))
+                        .frame(width: 45, height: 45)
+                        .rotationEffect(.degrees( show ? -180 : -90))
                         .frame(width: 20, height: 22)
-                        .foregroundColor(.orange)
+                        .foregroundColor( show ? (Color.white) : (Color("11grey")))
                         .padding()
-        
-                }.background(Color.white)
-                    .clipShape(Circle())
-                .offset(y: -750)
+
+                }
+                .offset(x: -7, y: -7)
                 
             }
             .padding()
 
         }).edgesIgnoringSafeArea(.all)
-            .background(Color.black.opacity(1).edgesIgnoringSafeArea(.all))
+            .background(Color("11grey").opacity(1).edgesIgnoringSafeArea(.all))
     }
 }
 
 
 struct PopOver : View {
     
+    @State var ageShow = false
+    @State var locationShow = false
+    @State var skillTypeShow = false
+    @State var clubShow = false
+    
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 18) {
+        VStack(alignment: .leading, spacing: 10) {
+            
             
             Button(action: {
                 
             }) {
                 
-                HStack(spacing : 15){
+                HStack(spacing : 10){
                     
-                    Image(systemName: "Home")
+                    Image(systemName: "person.fill")
                     Text("Age")
                 }
             }
@@ -103,9 +119,9 @@ struct PopOver : View {
                 
             }) {
                 
-                HStack(spacing : 15){
+                HStack(spacing : 10){
                     
-                    Image(systemName: "home")
+                    Image(systemName: "safari.fill")
                     Text("Location")
                 }
             }
@@ -114,9 +130,9 @@ struct PopOver : View {
                 
             }) {
                 
-                HStack(spacing : 15){
+                HStack(spacing : 10){
                     
-                    Image(systemName: "home")
+                    Image(systemName: "flame.fill")
                     Text("Skill Type")
                 }
             }
@@ -125,16 +141,17 @@ struct PopOver : View {
                 
             }) {
                 
-                HStack(spacing : 15){
+                HStack(spacing : 10){
                     
-                    Image(systemName: "home")
+                    Image(systemName: "circle.grid.hex.fill")
                     Text("Club")
                 }
             }
+        
         }
-        .foregroundColor(.black)
-        .frame(width: 130)
-        .padding()
+            .foregroundColor(.black)
+            .frame(width: 110, height: 145)
+            .padding()
     }
 }
 

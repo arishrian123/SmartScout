@@ -38,6 +38,8 @@
 		19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D1A4FB24FBCC2800641949 /* PlayerScrollView.swift */; };
 		19D2D1DB2500226E009FA73E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D2D1DA2500226E009FA73E /* ProfileView.swift */; };
 		19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF9CF4250F48D800D871CB /* FirestoreData.swift */; };
+		3706ECBF25292DB600A2C63F /* AddNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706ECBE25292DB600A2C63F /* AddNewItemView.swift */; };
+		3706ECC1252936A100A2C63F /* FilterAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3706ECC0252936A100A2C63F /* FilterAgeView.swift */; };
 		371074D52527AA1E00072DAB /* Popup1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371074D42527AA1E00072DAB /* Popup1View.swift */; };
 		371BABE8251904C60077FCA5 /* sliderFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371BABE7251904C60077FCA5 /* sliderFeedbackView.swift */; };
 		374B876625110680005FD24A /* PlayerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374B876525110680005FD24A /* PlayerAnimation.swift */; };
@@ -134,6 +136,8 @@
 		19D2D1DA2500226E009FA73E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		19DF9CF4250F48D800D871CB /* FirestoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreData.swift; sourceTree = "<group>"; };
 		2844902EF9E31347B23A7CA3 /* Pods-SmartScout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartScout.debug.xcconfig"; path = "Target Support Files/Pods-SmartScout/Pods-SmartScout.debug.xcconfig"; sourceTree = "<group>"; };
+		3706ECBE25292DB600A2C63F /* AddNewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemView.swift; sourceTree = "<group>"; };
+		3706ECC0252936A100A2C63F /* FilterAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAgeView.swift; sourceTree = "<group>"; };
 		371074D42527AA1E00072DAB /* Popup1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup1View.swift; sourceTree = "<group>"; };
 		371BABE7251904C60077FCA5 /* sliderFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sliderFeedbackView.swift; sourceTree = "<group>"; };
 		374B876525110680005FD24A /* PlayerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAnimation.swift; sourceTree = "<group>"; };
@@ -317,6 +321,8 @@
 			isa = PBXGroup;
 			children = (
 				371074D42527AA1E00072DAB /* Popup1View.swift */,
+				3706ECBE25292DB600A2C63F /* AddNewItemView.swift */,
+				3706ECC0252936A100A2C63F /* FilterAgeView.swift */,
 			);
 			path = "Filter Pop-Ups";
 			sourceTree = "<group>";
@@ -653,6 +659,7 @@
 				19BC0E0024F55E9F001B9C1D /* AppDelegate.swift in Sources */,
 				376F88D12515381C005D8E15 /* Login2.swift in Sources */,
 				3752B35825118DA1003A2071 /* BlurView.swift in Sources */,
+				3706ECC1252936A100A2C63F /* FilterAgeView.swift in Sources */,
 				3752B35125118C7A003A2071 /* SettingsOption.swift in Sources */,
 				19D1A4F424FBCA9900641949 /* Video.swift in Sources */,
 				3752B35625118C7A003A2071 /* Store.swift in Sources */,
@@ -662,6 +669,7 @@
 				19DF9CF5250F48D800D871CB /* FirestoreData.swift in Sources */,
 				19D1A4FC24FBCC2800641949 /* PlayerScrollView.swift in Sources */,
 				19D1A4F624FBCB2400641949 /* Host.swift in Sources */,
+				3706ECBF25292DB600A2C63F /* AddNewItemView.swift in Sources */,
 				376E6F7D2512B5A50065458F /* ButtonNavigation.swift in Sources */,
 				37E9B76B25139D3C00A58A71 /* ScreenTest.swift in Sources */,
 				19BC0E0224F55E9F001B9C1D /* SceneDelegate.swift in Sources */,

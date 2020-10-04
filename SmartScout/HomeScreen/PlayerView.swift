@@ -44,7 +44,7 @@ struct PlayerView : View {
             ForEach(0..<self.data.videos.count, id: \.self){i in
                 
                 ZStack{
-
+                    
                     Player(player: self.data.videos[i].player)
                         // full screensize because were going to make paging...
                         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
@@ -61,6 +61,8 @@ struct PlayerView : View {
                             self.data.videos[i].player.seek(to: .zero)
                             self.data.videos[i].player.play()
                             
+                            Pop()
+
                         }) {
                             
                             Image(systemName: "goforward")

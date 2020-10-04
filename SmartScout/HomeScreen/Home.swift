@@ -42,8 +42,6 @@ struct Home : View {
         
         ZStack{
             
-            Pop()
-            
             /*VStack{
                 Text("SmartScout")
                 
