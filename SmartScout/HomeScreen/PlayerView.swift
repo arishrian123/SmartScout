@@ -61,7 +61,6 @@ struct PlayerView : View {
                             self.data.videos[i].player.seek(to: .zero)
                             self.data.videos[i].player.play()
                             
-                            Pop()
 
                         }) {
                             
