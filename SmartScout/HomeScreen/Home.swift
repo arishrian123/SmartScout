@@ -42,12 +42,13 @@ struct Home : View {
         
         ZStack{
             
-            /*VStack{
-                Text("SmartScout")
-                
-            }.frame(width: 200, height: 100)
-            .background(BlurView(style: .regular))
-            .zIndex(1)*/
+            VStack{
+                tabBarView()
+                Spacer()
+            }.offset(y: 300)
+            .frame(width: 200, height: 100)
+            .zIndex(1)
+            
             
             if(self.firestoreData.liked && self.firestoreData.userType == "Parent") {
                 
@@ -61,13 +62,13 @@ struct Home : View {
             
                 HStack{
                     
+                    
                     Spacer()
                     
                     
                 
                 
             }
-                
                 // due to all edges are ignored...
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                 .padding(.bottom, (UIApplication.shared.windows.first?.safeAreaInsets.bottom)! + 5)

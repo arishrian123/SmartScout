@@ -43,6 +43,7 @@ struct Login2: View {
                  "type": self.userTypes[self.userType]])*/
                 
                 self.loginViewModel.isLoggedIn = true
+                
             }
         }
     }
@@ -217,10 +218,10 @@ struct Login2: View {
                                 .background(Color.white.opacity(0.5))
                         }
                         
-                        Text("Re-Enter")
+                        /*Text("Re-Enter")
                             .font(Font.custom("Poppins-Light", size: 20))
                             .foregroundColor(Color.white)
-                            .padding(.top,10)
+                            .padding(.top,10)*/
                         
                         
                         VStack{
