@@ -33,8 +33,7 @@ struct filterButton: View {
                     .padding(.trailing, 10)
             }
             
-        }.edgesIgnoringSafeArea(.all)
-            .background(Color("11grey").opacity(0.1).edgesIgnoringSafeArea(.all))
+        }
         
         
         

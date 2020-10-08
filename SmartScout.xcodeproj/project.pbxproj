@@ -16,6 +16,9 @@
 		191A86972503061200389B82 /* AddNewVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A86962503061200389B82 /* AddNewVideoView.swift */; };
 		191A869B2503180E00389B82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 191A869A2503180E00389B82 /* GoogleService-Info.plist */; };
 		191A869D2503B66A00389B82 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A869C2503B66A00389B82 /* SplashScreen.swift */; };
+		19211682252E90C100FB5879 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1921167F252E90C000FB5879 /* video1.mp4 */; };
+		19211683252E90C100FB5879 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19211680252E90C000FB5879 /* video2.mp4 */; };
+		19211684252E90C100FB5879 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 19211681252E90C000FB5879 /* video3.mp4 */; };
 		193DF022251B404900573F14 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 193DF021251B404900573F14 /* Lottie */; };
 		193DF028251B409F00573F14 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193DF027251B409F00573F14 /* LottieView.swift */; };
 		193DF02C251B40B800573F14 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 193DF02B251B40B800573F14 /* heart.json */; };
@@ -110,6 +113,9 @@
 		191A86962503061200389B82 /* AddNewVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewVideoView.swift; sourceTree = "<group>"; };
 		191A869A2503180E00389B82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		191A869C2503B66A00389B82 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		1921167F252E90C000FB5879 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		19211680252E90C000FB5879 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		19211681252E90C000FB5879 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 		193DF027251B409F00573F14 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		193DF02B251B40B800573F14 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		197EF5E12508DF5800B57F91 /* video4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.mov; sourceTree = "<group>"; };
@@ -215,6 +221,16 @@
 			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
+		1921167E252E909B00FB5879 /* vids */ = {
+			isa = PBXGroup;
+			children = (
+				1921167F252E90C000FB5879 /* video1.mp4 */,
+				19211680252E90C000FB5879 /* video2.mp4 */,
+				19211681252E90C000FB5879 /* video3.mp4 */,
+			);
+			path = vids;
+			sourceTree = "<group>";
+		};
 		197EF5E02508DF3F00B57F91 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +265,7 @@
 		19BC0DFE24F55E9F001B9C1D /* SmartScout */ = {
 			isa = PBXGroup;
 			children = (
+				1921167E252E909B00FB5879 /* vids */,
 				193DF027251B409F00573F14 /* LottieView.swift */,
 				193DF02B251B40B800573F14 /* heart.json */,
 				19A892A525110BF900F0BC84 /* Preview Content */,
@@ -523,10 +540,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19211683252E90C100FB5879 /* video2.mp4 in Resources */,
 				37CD5133250C787D005B3041 /* Poppins-SemiBold.otf in Resources */,
 				3752B35425118C7A003A2071 /* Settings.json in Resources */,
 				193DF02C251B40B800573F14 /* heart.json in Resources */,
 				19BC0E0C24F55EA1001B9C1D /* LaunchScreen.storyboard in Resources */,
+				19211682252E90C100FB5879 /* video1.mp4 in Resources */,
 				191A86912502E89300389B82 /* Extension in Resources */,
 				3755FDF6250F889400C22AC6 /* Assets.xcassets in Resources */,
 				19A892A625110BF900F0BC84 /* Preview Content in Resources */,
@@ -534,6 +553,7 @@
 				374B8768251108B0005FD24A /* Unknown.gif in Resources */,
 				37CD5131250C786F005B3041 /* Poppins-Light.otf in Resources */,
 				197EF5E22508DF5800B57F91 /* video4.mov in Resources */,
+				19211684252E90C100FB5879 /* video3.mp4 in Resources */,
 				37CD5135250C78BB005B3041 /* Poppins-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

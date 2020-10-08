@@ -19,7 +19,7 @@ class VideoStore: ObservableObject {
     let storage = Storage.storage()
     
     init(){
-        //videos.append(Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video4", ofType: "mov")!)), replay: false, liked: false))
+        
         self.updateData()
         print(videos.count)
     }
@@ -35,6 +35,9 @@ class VideoStore: ObservableObject {
                 
                 print((err?.localizedDescription)!)
                 self.isEmpty = true
+                self.videos.append(Video(id: 0, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType: "mp4")!)), replay: false, liked: false))
+                self.videos.append(Video(id: 1, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType: "mp4")!)), replay: false, liked: false))
+                self.videos.append(Video(id: 2, player: AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "video3", ofType: "mp4")!)), replay: false, liked: false))
                 return
             }
             

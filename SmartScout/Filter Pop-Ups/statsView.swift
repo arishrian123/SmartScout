@@ -33,8 +33,7 @@ struct statsView: View {
                     .padding(.trailing, 166)
             }
             
-        }.edgesIgnoringSafeArea(.all)
-            .background(Color("11grey").opacity(0).edgesIgnoringSafeArea(.all))
+        }
         
         
         
