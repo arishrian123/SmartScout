@@ -12,7 +12,6 @@ struct tabBarView: View {
     var body: some View {
         
         ZStack{
-            
             filterButton()
             addItemView()
             statsView()

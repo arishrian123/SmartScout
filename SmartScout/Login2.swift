@@ -293,7 +293,7 @@ struct Login2: View {
                 .edgesIgnoringSafeArea(.all)
                 .statusBar(hidden: true)
             } else {
-                TabBarView(data: data)
+                Home()
                 
             }
         }

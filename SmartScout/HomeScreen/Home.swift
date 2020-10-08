@@ -42,12 +42,11 @@ struct Home : View {
         
         ZStack{
             
-            VStack{
+            /*VStack{
                 tabBarView()
-                Spacer()
-            }.offset(y: 300)
-            .frame(width: 200, height: 100)
-            .zIndex(1)
+            }.offset(y: UIScreen.main.bounds.height-550)
+            .frame(width: 400, height: 100)
+            .zIndex(1)*/
             
             
             if(self.firestoreData.liked && self.firestoreData.userType == "Parent") {
@@ -62,11 +61,9 @@ struct Home : View {
             
                 HStack{
                     
-                    
+                    tabBarView()
                     Spacer()
-                    
-                    
-                
+       
                 
             }
                 // due to all edges are ignored...

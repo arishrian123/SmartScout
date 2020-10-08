@@ -34,8 +34,7 @@ struct addItemView: View {
                     .padding(.trailing, 98.5)
             }
             
-        }.edgesIgnoringSafeArea(.all)
-        .background(Color("11grey").opacity(0).edgesIgnoringSafeArea(.all))
+        }
         
         
         
