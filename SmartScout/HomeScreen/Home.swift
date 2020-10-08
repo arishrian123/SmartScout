@@ -15,6 +15,7 @@ struct Home : View {
     @State var index = 0
     @State var top = 0
     @State var profileIsPressed = false
+    @State var show = false
     
     @ObservedObject var data = VideoStore()
     @ObservedObject var firestoreData = FirestoreData()
