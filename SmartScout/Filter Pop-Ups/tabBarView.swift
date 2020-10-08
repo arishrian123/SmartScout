@@ -25,6 +25,9 @@ struct tabBarView: View {
                         .padding(20)
                 .foregroundColor(Color("13grey"))
                 }
+                .sheet(isPresented: $show) {
+                    ProfileView()
+                }
 
                 .background(Color("11grey"))
                 .clipShape(Circle())
